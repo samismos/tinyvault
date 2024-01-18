@@ -3,24 +3,25 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 5vmin;
   pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 10s linear;
   }
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 5vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* font-size: calc(10px + 2vmin); */
+  font-family: 'JoystixMonospace';
   color: white;
 }
 
@@ -32,7 +33,208 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+#atm-container {
+  background-color: #005f6ac0;
+  height: 95vh;
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+
+.atm {
+  background-color: #005F6A;
+  height: 1024px;
+  width: 1024px;
+  display: flex;
+}
+
+.hub-column {
+  flex: 1;
+  padding: 16px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-column {
+  font-family: 'JoystixMonospace';
+  color: white;
+  height: 80%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-out;
+}
+.withdraw:hover {
+  background-color: #ff1900 !important; /* Target background color on hover */
+  
+}
+.deposit:hover {
+  background-color: #0011ff !important; /* Target background color on hover */
+}
+.balance:hover {
+  background-color: #01eb63 !important; /* Target background color on hover */
+}
+
+.modal-content {
+  font-size: larger;
+  text-align: center;
+  font-family: 'JoystixMonospace';
+  color: rgb(0, 0, 0);
+}
+
+.col-title {
+  font-size: xx-large;
+  text-align: center;
+  font-family: 'JoystixMonospace';
+  color: white;
+}
+
+.col-subtitle {
+  font-size: larger;
+  text-align: center;
+  font-family: 'JoystixMonospace';
+  color: white;
+}
+
+.action-page {
+  background-color: #005F6A;
+  height: 1024px;
+  width: 1024px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.back-button {
+  font-family: 'JoystixMonospace';
+  width: 40%;
+  height: 80px;
+  border-radius: 50px;
+  font-size: larger;
+  background-color: orange;
+  cursor: pointer;
+}
+
+.withdraw-button {
+  font-family: 'JoystixMonospace';
+  width: 60%;
+  height: 80px;
+  border-radius: 50px;
+  font-size: larger;
+  background-color: #00db42;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.deposit-button {
+  font-family: 'JoystixMonospace';
+  width: 60%;
+  height: 80px;
+  border-radius: 50px;
+  font-size: larger;
+  background-color: #00db42;
+  cursor: pointer;
+}
+
+.disabled {
+  background-color: rgb(189, 187, 187);
+  cursor: not-allowed;
+}
+
+.action-button {
+  font-family: 'JoystixMonospace';
+  width: 20%;
+  height: 80px;
+  border-radius: 50px;
+  font-size: larger;
+  color: black;
+  background-color:rgb(255, 255, 255);
+  transition: background-color 0.3s ease-out; /* Transition the background property */
+  cursor: pointer;
+}
+
+.action-button.selected {
+  background-color: #00db42;
+  color: #000000;
+}
+
+.keypad-container button {
+  width: 120px;
+  height: 120px;
+  font-family: 'JoystixMonospace';
+  font-size: x-large;
+  border-radius: 8px;
+  background-color: #FFFDD0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.534);
+  cursor: pointer;
+}
+
+.pin-container button {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  font-family: 'JoystixMonospace';
+  border-radius: 8px;
+}
+
+@font-face {
+  font-family: 'ArcadeClassic';
+  src: url('./fonts/ARCADECLASSIC.TTF') format('truetype');
+  src: url('./fonts/joystix_monospace.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JoystixMonospace';
+  src: url('./fonts/joystix_monospace.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.modal {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  border-radius: 10px;
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  vertical-align: middle;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Ensure the modal is on top */
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Add smooth transition for opacity and transform */
+}
+
+.modal.visible {
+  opacity: 1;
+}
+
+#atm-container.blur {
+  filter: blur(5px); /* Adjust the blur amount as needed */
+  pointer-events: none; /* Allow interactions only with the modal */
 }
