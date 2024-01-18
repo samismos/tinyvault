@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/tinyvault/static/css/main.94041aa0.css",
+    "main.js": "/tinyvault/static/js/main.208dcd74.js",
+    "static/js/787.33caaafc.chunk.js": "/tinyvault/static/js/787.33caaafc.chunk.js",
+    "static/media/withdrawal.gif": "/tinyvault/static/media/withdrawal.1bc791cd4364a3f56041.gif",
+    "static/media/savings.gif": "/tinyvault/static/media/savings.fbefa8cb6ef84b8a7ee6.gif",
+    "static/media/Balance noBG.png": "/tinyvault/static/media/Balance noBG.e86c0b08f5f95281f539.png",
+    "static/media/Withdraw noBG.png": "/tinyvault/static/media/Withdraw noBG.de984a0f53e9ef10bccc.png",
+    "static/media/joystix_monospace.otf": "/tinyvault/static/media/joystix_monospace.28a69e86e377d611dcaf.otf",
+    "static/media/Deposit noBG.png": "/tinyvault/static/media/Deposit noBG.359716fbf2e3aa8a277a.png",
+    "static/media/vault.png": "/tinyvault/static/media/vault.4edbd72c1ea87c250b3f.png",
+    "static/media/x-mark.png": "/tinyvault/static/media/x-mark.906d033348c0781f2bdf.png",
+    "static/media/ARCADECLASSIC.TTF": "/tinyvault/static/media/ARCADECLASSIC.8f36b955d042951fd3af.TTF",
+    "static/media/checkbox.png": "/tinyvault/static/media/checkbox.364c2d9fb41656bbcbeb.png",
+    "static/media/logo.svg": "/tinyvault/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/tinyvault/index.html",
+    "main.94041aa0.css.map": "/tinyvault/static/css/main.94041aa0.css.map",
+    "main.208dcd74.js.map": "/tinyvault/static/js/main.208dcd74.js.map",
+    "787.33caaafc.chunk.js.map": "/tinyvault/static/js/787.33caaafc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.94041aa0.css",
+    "static/js/main.208dcd74.js"
+  ]
+}
